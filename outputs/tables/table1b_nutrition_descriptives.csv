@@ -1,0 +1,3 @@
+variable,n,n_years_or_districts_total,missing_pct,mean,sd,min,max
+wasting_pct_under5_total,11,35,68.6,7.827,2.193,4.7,12.3
+stunting_pct_under5_total,11,35,68.6,27.282,7.016,17.4,35.5

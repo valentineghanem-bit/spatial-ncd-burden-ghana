@@ -1,0 +1,7 @@
+feature,mean_abs_shap
+insufficient_physical_activity_pct_agestd,0.06277244723363039
+overweight_adult_pct_agestd,0.061844819321482114
+obesity_adult_pct_agestd,0.05381903514742414
+oop_pct_che,0.010664460516125683
+alcohol_percapita_litres,0.009625511431644813
+non_hdl_cholesterol_mean_agestd,0.008096241409297406

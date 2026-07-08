@@ -1,0 +1,50 @@
+Loading GeoJSON (this file is large, ~27MB)...
+GeoJSON: 260 polygons
+Master vulnerability data: 261 districts
+Districts matched to crosswalk: 258 / 261
+Polygons with vulnerability index data joined: 258
+Unique polygons used: 258, unique master districts represented: 258
+C:\Users\VGhanem\AppData\Local\Programs\Python\Python313\Lib\site-packages\libpysal\weights\contiguity.py:347: UserWarning: The weights matrix is not fully connected: 
+ There are 6 disconnected components.
+ There are 3 islands with ids: 16, 92, 115.
+  W.__init__(self, neighbors, ids=ids, **kw)
+('WARNING: ', 16, ' is an island (no neighbors)')
+('WARNING: ', 92, ' is an island (no neighbors)')
+('WARNING: ', 115, ' is an island (no neighbors)')
+
+Queen contiguity: mean neighbors = 4.87, islands (no neighbors) = 3
+k=6 k-NN: mean neighbors = 6.0 (by construction), islands = 0
+
+Global Moran's I -- Queen contiguity: I=0.7968, p=0.0010
+Global Moran's I -- k=6 k-NN:         I=0.8026, p=0.0010
+Numeric spread between specifications: 0.0057 (reported as an actual number, not 'near-identical')
+C:\Users\VGhanem\AppData\Local\Programs\Python\Python313\Lib\site-packages\esda\getisord.py:527: RuntimeWarning: invalid value encountered in divide
+  z_scores = (statistic - expected_value) / np.sqrt(expected_variance)
+C:\Users\VGhanem\AppData\Local\Programs\Python\Python313\Lib\site-packages\esda\getisord.py:450: RuntimeWarning: invalid value encountered in divide
+  self.z_sim = (self.Gs - self.EG_sim) / self.seG_sim
+
+Getis-Ord Gi* hotspot/coldspot classification agreement between Queen and k=6 k-NN: 91.1% of districts classified identically
+Hotspots: Queen=4, k-NN=4 districts
+Coldspots: Queen=95, k-NN=108 districts
+
+Saved: outputs/tables/table4c_spatial_weights_sensitivity.csv
+
+Queen x k-NN Gi* classification cross-tabulation (full breakdown, not just net counts):
+kNN_k6           coldspot  hotspot  not_significant
+Queen                                              
+coldspot               90        0                5
+hotspot                 0        4                0
+not_significant        18        0              141
+
+Districts agreeing: 235 (91.1%), disagreeing: 23 (8.9%)
+Saved: outputs/tables/table4c2_gi_star_crosstab.csv
+C:\Users\VGhanem\AppData\Local\Programs\Python\Python313\Lib\site-packages\esda\moran.py:1354: RuntimeWarning: invalid value encountered in divide
+  self.z_sim = (self.Is - self.EI_sim) / self.seI_sim
+Saved: outputs/tables/table4d_district_spatial_statistics.csv
+
+Top hotspot districts (Queen contiguity, Gi* significant, p<0.05):
+                                                    district     region  vulnerability_index_pc1  gi_star_queen
+Tamale Metropolitan Area (TMA)-Tamale Central & Tamale South   Northern                 0.092945       2.120830
+                                             Bolgatanga East Upper East                 0.514532       1.796428
+                                                Wa Municipal Upper West                -0.456337       1.715264
+                                        Bolgatanga Municipal Upper East                -0.021577       1.365995

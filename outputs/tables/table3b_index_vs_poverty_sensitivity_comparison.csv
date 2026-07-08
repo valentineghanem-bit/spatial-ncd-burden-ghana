@@ -1,0 +1,3 @@
+measure,benchmark,r,r_squared,p_value,verdict
+composite_vulnerability_index,elderly_share_65plus_pct,0.1423,0.02026,0.0214,Composite index explains MORE variance than poverty_incidence alone.
+poverty_incidence_alone,elderly_share_65plus_pct,0.0946,0.00894,0.1276,Composite index explains MORE variance than poverty_incidence alone.

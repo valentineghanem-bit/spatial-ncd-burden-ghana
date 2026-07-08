@@ -1,0 +1,38 @@
+======================================================================
+KMO SAMPLING ADEQUACY + BARTLETT'S TEST OF SPHERICITY
+======================================================================
+Overall KMO: 0.662
+Per-item KMO:
+  poverty_incidence: 0.734
+  poverty_intensity: 0.633
+  illiteracy_rate: 0.769
+  uninsured_rate: 0.257
+  unemployment_rate: 0.540
+  dependency_ratio: 0.830
+
+Bartlett's test: chi-square=1310.5, p=2.91e-270
+
+Kaiser's interpretation of overall KMO=0.662: 'mediocre' (conventional cutoffs: >=0.6 acceptable, >=0.8 good)
+Bartlett verdict: REJECTS the null of an identity correlation matrix (p<0.001) -- factor extraction is justified
+
+Saved: outputs/tables/table4a_kmo_per_item.csv, table4a_kmo_bartlett_summary.csv
+
+======================================================================
+BOOTSTRAP STABILITY OF PC1 LOADINGS (5,000 resamples)
+======================================================================
+poverty_incidence: original=0.505, bootstrap mean=0.504 (SD=0.016), 95% CI=(0.471, 0.534)
+poverty_intensity: original=0.394, bootstrap mean=0.388 (SD=0.045), 95% CI=(0.294, 0.470)
+illiteracy_rate: original=0.484, bootstrap mean=0.483 (SD=0.025), 95% CI=(0.431, 0.528)
+uninsured_rate: original=0.043, bootstrap mean=0.046 (SD=0.064), 95% CI=(-0.072, 0.179)
+unemployment_rate: original=0.378, bootstrap mean=0.372 (SD=0.053), 95% CI=(0.262, 0.463)
+dependency_ratio: original=0.459, bootstrap mean=0.459 (SD=0.037), 95% CI=(0.383, 0.524)
+
+Saved: outputs/tables/table4b_pc1_loading_bootstrap_stability.csv
+
+Stability flags:
+  poverty_incidence: stable
+  poverty_intensity: stable
+  illiteracy_rate: stable
+  uninsured_rate: UNSTABLE (CI crosses zero)
+  unemployment_rate: stable
+  dependency_ratio: stable

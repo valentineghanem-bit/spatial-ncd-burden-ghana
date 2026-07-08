@@ -1,0 +1,16 @@
+manuscript/
+*.docx
+*.tex
+*.pdf
+__pycache__/
+.pytest_cache/
+*.pyc
+task_plan.md
+progress.md
+findings.md
+docs/stage*.md
+docs/datalog*.md
+evidence/
+qa/stage*.md
+qa/council_*.md
+qa/*reconciliation*.md

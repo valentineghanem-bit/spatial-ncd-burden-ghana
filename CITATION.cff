@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: "Noncommunicable Disease Burden and Determinants in Ghana: National Epidemiological Trends and District-Level Structural Risk-Vulnerability Mapping"
+message: "If you use this software or dataset, please cite it as below."
+type: software
+authors:
+  - given-names: "Valentine Golden"
+    family-names: "Ghanem"
+    affiliation: "COCOBOD Cocoa Clinic / University of Cape Coast, Ghana"
+    orcid: "https://orcid.org/0009-0002-8332-0220"
+    email: "valentineghanem@gmail.com"
+repository-code: "https://github.com/valentineghanem-bit/spatial-ncd-burden-ghana"
+license: MIT
+keywords: [noncommunicable diseases, NCD, Ghana, spatial epidemiology, machine learning, Getis-Ord, Moran's I, principal component analysis, structural vulnerability, Mann-Kendall]
+date-released: 2026-07-08

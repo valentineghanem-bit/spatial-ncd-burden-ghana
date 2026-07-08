@@ -1,0 +1,9 @@
+,poverty_incidence,poverty_intensity,literacy_rate,uninsured_rate,unemployment_rate,elderly_share_65plus_pct,dependency_ratio,total_population
+poverty_incidence,1.0,0.533,-0.881,0.256,0.493,0.095,0.817,-0.426
+poverty_intensity,0.533,1.0,-0.41,-0.081,0.818,0.266,0.366,-0.062
+literacy_rate,-0.881,-0.41,1.0,-0.154,-0.41,0.044,-0.848,0.386
+uninsured_rate,0.256,-0.081,-0.154,1.0,-0.388,-0.244,0.17,0.026
+unemployment_rate,0.493,0.818,-0.41,-0.388,1.0,0.261,0.33,-0.135
+elderly_share_65plus_pct,0.095,0.266,0.044,-0.244,0.261,1.0,0.094,-0.446
+dependency_ratio,0.817,0.366,-0.848,0.17,0.33,0.094,1.0,-0.342
+total_population,-0.426,-0.062,0.386,0.026,-0.135,-0.446,-0.342,1.0

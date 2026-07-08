@@ -1,0 +1,45 @@
+
+TABLE 1a -- National NCD panel (2000-2022)
+                                  variable  n  n_years_or_districts_total  missing_pct   mean     sd    min    max
+       ncd_premature_death_proportion_pct 22                          23          4.3 63.600  1.860 61.173 67.998
+                 ncd_3070_probability_pct 22                          23          4.3 24.541  1.026 22.200 25.700
+              overweight_adult_pct_agestd 23                          23          0.0 29.891  4.698 20.996 36.728
+                 obesity_adult_pct_agestd 23                          23          0.0  9.786  1.999  6.076 12.931
+           diabetes_prevalence_pct_agestd 23                          23          0.0  8.032  1.714  6.191 11.698
+          non_hdl_cholesterol_mean_agestd 19                          23         17.4  3.100  0.137  2.900  3.300
+                   tobacco_use_pct_agestd  8                          23         65.2  4.825  1.352  3.400  7.100
+insufficient_physical_activity_pct_agestd 23                          23          0.0 19.087  1.164 17.043 21.162
+                 alcohol_percapita_litres 23                          23          0.0  4.824  0.232  4.444  5.229
+          air_pollution_death_rate_agestd 10                          23         56.5 71.674  5.282 63.706 79.087
+               uhc_service_coverage_index  7                          23         69.6 38.311 10.207 23.650 47.788
+                              oop_pct_che 23                          23          0.0 33.428  5.964 22.651 45.051
+                       oop_per_capita_usd 23                          23          0.0 20.019 10.390  3.976 40.955
+
+TABLE 1b -- Nutrition double burden (1988-2022, 'Total' stratum)
+                  variable  n  n_years_or_districts_total  missing_pct   mean    sd  min  max
+ wasting_pct_under5_total 11                          35         68.6  7.827 2.193  4.7 12.3
+stunting_pct_under5_total 11                          35         68.6 27.282 7.016 17.4 35.5
+
+TABLE 1c -- District structural NCD-risk vulnerability determinants (N=261)
+                 variable   n  n_years_or_districts_total  missing_pct       mean        sd       min        max
+       poverty_incidence 261                         261          0.0     27.587    13.449     6.300     68.600
+       poverty_intensity 261                         261          0.0     43.442     1.738    40.500     51.200
+           literacy_rate 261                         261          0.0      0.710     0.147     0.392      0.946
+          uninsured_rate 261                         261          0.0      0.309     0.135     0.052      0.732
+       unemployment_rate 261                         261          0.0      0.507     0.082     0.360      0.845
+elderly_share_65plus_pct 261                         261          0.0      4.629     1.574     1.425     10.408
+        dependency_ratio 261                         261          0.0      0.694     0.139     0.296      1.116
+        total_population 261                         261          0.0 118051.517 67972.229 28179.000 443945.000
+
+TABLE 1d -- District determinant correlation matrix
+                           poverty_incidence  poverty_intensity  literacy_rate  uninsured_rate  unemployment_rate  elderly_share_65plus_pct  dependency_ratio  total_population
+poverty_incidence                     1.000              0.533         -0.881           0.256              0.493                     0.095             0.817            -0.426
+poverty_intensity                     0.533              1.000         -0.410          -0.081              0.818                     0.266             0.366            -0.062
+literacy_rate                        -0.881             -0.410          1.000          -0.154             -0.410                     0.044            -0.848             0.386
+uninsured_rate                        0.256             -0.081         -0.154           1.000             -0.388                    -0.244             0.170             0.026
+unemployment_rate                     0.493              0.818         -0.410          -0.388              1.000                     0.261             0.330            -0.135
+elderly_share_65plus_pct              0.095              0.266          0.044          -0.244              0.261                     1.000             0.094            -0.446
+dependency_ratio                      0.817              0.366         -0.848           0.170              0.330                     0.094             1.000            -0.342
+total_population                     -0.426             -0.062          0.386           0.026             -0.135                    -0.446            -0.342             1.000
+
+N districts check: 261 (expect 261)

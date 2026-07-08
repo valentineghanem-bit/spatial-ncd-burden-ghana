@@ -1,0 +1,17 @@
+Series eligible for Mann-Kendall (trend_and_ml_eligible per Stage 1 tier metadata):
+['ncd_premature_death_proportion_pct', 'ncd_3070_probability_pct', 'overweight_adult_pct_agestd', 'obesity_adult_pct_agestd', 'diabetes_prevalence_pct_agestd', 'non_hdl_cholesterol_mean_agestd', 'insufficient_physical_activity_pct_agestd', 'alcohol_percapita_litres', 'air_pollution_death_rate_agestd', 'oop_pct_che', 'oop_per_capita_usd']
+ncd_premature_death_proportion_pct: trend=decreasing, S=-169.0, tau=-0.7316, p=0.00000, Sen's slope=-0.24225/yr, 68.00 (2000) -> 62.70 (2021)
+ncd_3070_probability_pct: trend=decreasing, S=-117.0, tau=-0.5065, p=0.00101, Sen's slope=-0.13000/yr, 24.50 (2000) -> 22.20 (2021)
+overweight_adult_pct_agestd: trend=increasing, S=253.0, tau=1.0000, p=0.00000, Sen's slope=0.65139/yr, 21.00 (2000) -> 36.73 (2022)
+obesity_adult_pct_agestd: trend=increasing, S=253.0, tau=1.0000, p=0.00000, Sen's slope=0.28567/yr, 6.08 (2000) -> 12.93 (2022)
+diabetes_prevalence_pct_agestd: trend=increasing, S=253.0, tau=1.0000, p=0.00000, Sen's slope=0.23393/yr, 6.19 (2000) -> 11.70 (2022)
+non_hdl_cholesterol_mean_agestd: trend=increasing, S=142.0, tau=0.8304, p=0.00000, Sen's slope=0.02500/yr, 2.90 (2000) -> 3.30 (2018)
+insufficient_physical_activity_pct_agestd: trend=increasing, S=253.0, tau=1.0000, p=0.00000, Sen's slope=0.17077/yr, 17.04 (2000) -> 21.16 (2022)
+alcohol_percapita_litres: trend=no trend, S=-53.0, tau=-0.2095, p=0.16935, Sen's slope=-0.01705/yr, 4.82 (2000) -> 4.44 (2022)
+air_pollution_death_rate_agestd: trend=decreasing, S=-45.0, tau=-1.0000, p=0.00008, Sen's slope=-1.76000/yr, 79.09 (2010) -> 63.71 (2019)
+oop_pct_che: trend=no trend, S=-51.0, tau=-0.2016, p=0.18666, Sen's slope=-0.35066/yr, 38.04 (2000) -> 25.03 (2022)
+oop_per_capita_usd: trend=increasing, S=105.0, tau=0.4150, p=0.00602, Sen's slope=0.99747/yr, 3.98 (2000) -> 20.61 (2022)
+
+Saved: outputs/tables/table5a_mann_kendall_trends.csv (11 series tested)
+
+Wasting/stunting: EXCLUDED from Mann-Kendall per Stage 4 council ruling (descriptive-only, 68.6% missing).

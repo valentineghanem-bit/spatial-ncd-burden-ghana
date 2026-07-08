@@ -1,0 +1,50 @@
+Complete-case n=18 (Stage 1 council-corrected 6-feature spec)
+
+======================================================================
+LEAVE-ONE-OUT CROSS-VALIDATION (mandatory, n too small for held-out test split)
+======================================================================
+Random Forest  -- LOOCV R2=0.2311, MAE=0.1667
+  Per-fold absolute error: mean=0.1667, SD=0.1526, range=(0.0014, 0.5683)
+  Saved fold-level table: outputs/tables/table4g_loocv_fold_level_errors.csv (3 of 18 folds exceed mean+1SD error, i.e. are driving the variance)
+XGBoost        -- LOOCV R2=0.2048, MAE=0.1882
+  Per-fold absolute error: mean=0.1882, SD=0.1320, range=(0.0305, 0.4986)
+
+Naive baseline (predict mean every time): MAE=0.2167
+RF beats naive baseline: True (RF MAE=0.1667 vs naive=0.2167)
+XGBoost beats naive baseline: True (XGB MAE=0.1882 vs naive=0.2167)
+
+======================================================================
+PERMUTATION-NULL BASELINE (100 shuffles, Random Forest, mandatory per Stage 2 council)
+======================================================================
+  permutation 20/100 done
+  permutation 40/100 done
+  permutation 60/100 done
+  permutation 80/100 done
+  permutation 100/100 done
+Real-data LOOCV R2: 0.2311
+Permutation-null R2 distribution: mean=-0.3624, SD=0.2674, 95th percentile=0.0860, max=0.1836
+Real-data R2 exceeded 100/100 null-permutation R2 values tested (empirical p < 0.0099, resolution bounded by shuffle count -- NOT reported as an exact percentile)
+
+Verdict: Real-data R2 exceeded all 100 null-permutation values tested (empirical p < 0.0099) -- some genuine signal beyond chance, though still exploratory given n=18 and the coarse resolution of a 100-shuffle null estimate.
+
+======================================================================
+SHAP (RandomForest, full-data fit -- descriptive only per permutation-null verdict)
+======================================================================
+                                  feature  mean_abs_shap
+insufficient_physical_activity_pct_agestd       0.062772
+              overweight_adult_pct_agestd       0.061845
+                 obesity_adult_pct_agestd       0.053819
+                              oop_pct_che       0.010664
+                 alcohol_percapita_litres       0.009626
+          non_hdl_cholesterol_mean_agestd       0.008096
+
+SHAP stability check across all 18 LOOCV training-fold subsets (leave-one-out):
+Most common top-3 SHAP ranking across 18 LOOCV subsets: ('insufficient_physical_activity_pct_agestd', 'overweight_adult_pct_agestd', 'obesity_adult_pct_agestd') (14/18 = 77.8% of subsets)
+Distinct top-3 orderings seen: 2
+Top-3 SHAP ranking (physical inactivity, overweight, obesity) held in 78% of 18 leave-one-out training subsets
+Saved: outputs/tables/table4h_shap_stability_across_loocv_folds.csv
+
+Saved: outputs/tables/table4e_ml_loocv_permutation_results.csv, table4f_shap_feature_ranking.csv
+
+HONEST HEADLINE VERDICT: Real-data R2 exceeded all 100 null-permutation values tested (empirical p < 0.0099) -- some genuine signal beyond chance, though still exploratory given n=18 and the coarse resolution of a 100-shuffle null estimate.
+SHAP STABILITY: Top-3 SHAP ranking (physical inactivity, overweight, obesity) held in 78% of 18 leave-one-out training subsets

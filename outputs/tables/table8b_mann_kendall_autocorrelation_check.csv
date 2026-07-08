@@ -1,0 +1,12 @@
+variable,lag1_autocorrelation,original_p,hamed_rao_p,original_trend,hamed_rao_trend,tau
+ncd_premature_death_proportion_pct,0.963,0.0,0.00285,decreasing,decreasing,-0.7316
+ncd_3070_probability_pct,0.97,0.00101,0.04312,decreasing,decreasing,-0.5065
+overweight_adult_pct_agestd,1.0,0.0,0.00028,increasing,increasing,1.0
+obesity_adult_pct_agestd,1.0,0.0,3e-05,increasing,increasing,1.0
+diabetes_prevalence_pct_agestd,1.0,0.0,0.00019,increasing,increasing,1.0
+non_hdl_cholesterol_mean_agestd,0.948,0.0,0.0,increasing,increasing,0.8304
+insufficient_physical_activity_pct_agestd,0.999,0.0,0.0,increasing,increasing,1.0
+alcohol_percapita_litres,0.89,0.16935,0.33013,no trend,no trend,-0.2095
+air_pollution_death_rate_agestd,0.995,8e-05,8e-05,decreasing,decreasing,-1.0
+oop_pct_che,0.405,0.18666,0.18666,no trend,no trend,-0.2016
+oop_per_capita_usd,0.869,0.00602,0.0935,increasing,no trend,0.415

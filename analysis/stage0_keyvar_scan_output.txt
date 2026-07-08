@@ -1,0 +1,170 @@
+NCD: noncommunicable_diseases_indicators_gha.csv -> (4221, 17) (post-HXL-drop)
+GlobalStrategy: global_strategy_indicators_gha.csv -> (2427, 17) (post-HXL-drop)
+Alcohol: global_information_system_on_alcohol_and_health_indicators_gha.csv -> (944, 17) (post-HXL-drop)
+GHE_LifeExp: global_health_estimates_life_expectancy_and_leading_causes_of_death_and_disability_indicators_gh.csv -> (5714, 17) (post-HXL-drop)
+Nutrition: nutrition_indicators_gha.csv -> (8448, 17) (post-HXL-drop)
+HealthFinancing: health_financing_indicators_gha.csv -> (276, 17) (post-HXL-drop)
+HealthSystems: health_systems_indicators_gha.csv -> (51, 17) (post-HXL-drop)
+WHS: world_health_statistics_indicators_gha.csv -> (16339, 17) (post-HXL-drop)
+
+====================================================================================================
+KEYWORD SCAN across GHO (DISPLAY) indicator names
+====================================================================================================
+
+--- NCD (39 distinct indicators) ---
+  [premature] Premature deaths due to noncommunicable diseases (NCD) as a proportion of all NCD deaths
+  [overweight] Prevalence of overweight among adults, BMI &GreaterEqual; 25 (crude estimate) (%)
+  [overweight] Prevalence of overweight among children and adolescents, BMI > +1 standard deviations above the median (crude estimate) (%)
+  [overweight] Prevalence of overweight among adults, BMI &GreaterEqual; 25 (age-standardized estimate) (%)
+  [obesity] Prevalence of obesity among children and adolescents, BMI > +2 standard deviations above the median (crude estimate) (%)
+  [obesity] Prevalence of obesity among adults, BMI &GreaterEqual; 30 (crude estimate) (%)
+  [obesity] Prevalence of obesity among adults, BMI &GreaterEqual; 30 (age-standardized estimate) (%)
+  [cholesterol] Mean total cholesterol,  crude
+  [cholesterol] Mean Non-HDL cholesterol, age-standardized
+  [cholesterol] Mean total cholesterol,  age-standardized
+  [cholesterol] Mean HDL cholesterol, crude
+  [cholesterol] Mean Non-HDL cholesterol, crude
+  [cholesterol] Mean HDL cholesterol, age-standardized
+  [non-hdl] Mean Non-HDL cholesterol, crude
+  [non-hdl] Mean Non-HDL cholesterol, age-standardized
+  [alcohol] Alcohol, total per capita (15+) consumption (in litres of pure alcohol) (SDG Indicator 3.5.2), three-year average
+  [alcohol] Alcohol, unrecorded per capita (15+) consumption (in litres of pure alcohol), three-year average
+  [alcohol] Alcohol, recorded per capita (15+) consumption (in litres of pure alcohol), three-year average
+  [alcohol] Alcohol, recorded per capita (15+) consumption (in litres of pure alcohol), by beverage type
+  [cardiovascular] Probability (%) of dying between age 30 and exact age 70 from any of cardiovascular disease, cancer, diabetes, or chronic respiratory disease
+  [cancer] Probability (%) of dying between age 30 and exact age 70 from any of cardiovascular disease, cancer, diabetes, or chronic respiratory disease
+  [cancer] Prevalence of cervical cancer screening  among women aged 30-49 years (%)
+  [diabetes] Diabetes treatment coverage, age-standardized
+  [diabetes] Probability (%) of dying between age 30 and exact age 70 from any of cardiovascular disease, cancer, diabetes, or chronic respiratory disease
+  [diabetes] Prevalence of diabetes, crude
+  [diabetes] Prevalence of diabetes, age-standardized
+  [tobacco] Estimate of current tobacco use prevalence (%)
+  [tobacco] Monitoring tobacco use and prevention policies
+  [tobacco] Estimate of current tobacco use prevalence (%) (age-standardized rate)
+  [tobacco] Estimate of current tobacco smoking prevalence (%) (age-standardized rate)
+  [tobacco] Estimate of current tobacco smoking prevalence (%)
+  [physical activity] Prevalence of insufficient physical activity among adults aged 18+ years (crude estimate) (%)
+  [physical activity] Prevalence of insufficient physical activity among adults aged 18+ years (age-standardized estimate) (%)
+
+--- GlobalStrategy (12 distinct indicators) ---
+  [overweight] Overweight prevalence among children under 5 years of age (% weight-for-height >+2 SD), survey-based estimates
+  [cardiovascular] Probability (%) of dying between age 30 and exact age 70 from any of cardiovascular disease, cancer, diabetes, or chronic respiratory disease
+  [cancer] Coverage of national cervical cancer screening program (%)
+  [cancer] Probability (%) of dying between age 30 and exact age 70 from any of cardiovascular disease, cancer, diabetes, or chronic respiratory disease
+  [air pollution] Ambient and household air pollution attributable death rate (per 100 000 population, age-standardized)
+  [uhc] UHC Service Coverage Index (SDG 3.8.1)
+  [uhc] UHC Service Coverage sub-index on reproductive, maternal, newborn and child health
+  [wasting] Wasting prevalence among children under 5 years of age (% weight-for-height <-2 SD), survey-based estimates
+  [diabetes] Probability (%) of dying between age 30 and exact age 70 from any of cardiovascular disease, cancer, diabetes, or chronic respiratory disease
+
+--- Alcohol (42 distinct indicators) ---
+  [alcohol] National organization for monitoring alcohol
+  [alcohol] Alcohol, abstainers past 12 months (%), age-standardized
+  [alcohol] Alcohol, drinkers only per capita (15+) consumption in litres of pure alcohol, three-year average
+  [alcohol] National surveys on youth alcohol consumption
+  [alcohol] Alcohol, total  (recorded + unrecorded) per capita (15+) consumption, projections
+  [alcohol] Alcohol-attributable DALYs per 100,000 people (age standardized)
+  [alcohol] Alcohol, heavy continuous drinkers past year (%)
+  [alcohol] Alcohol-attributable all-cause deaths (all ages), (number)
+  [alcohol] Alcohol-attributable fractions, all-cause deaths (%)
+  [alcohol] National guidelines for the prevention and reduction of alcohol-related harm in schools
+  [alcohol] Alcohol-attributable all-cause deaths per 100,000, age standardized
+  [alcohol] National system of epidemiological data collection for alcohol use
+  [alcohol] Legislation on alcohol testing at workplaces
+  [alcohol] Alcohol, consumers past 12 months (%), age-standardized
+  [alcohol] Alcohol, heavy episodic drinking (15+) past 30 days (%), age-standardized
+  [alcohol] National systems for monitoring alcohol consumption and harms
+  [alcohol] National guidelines for alcohol problem prevention and counselling at workplaces
+  [alcohol] Alcohol, abstainers lifetime (%), age-standardized
+  [alcohol] Alcohol, harmful use (15+), 12 month prevalence (%) with 95%CI
+  [alcohol] Alcohol, heavy continuous drinkers, drinkers only, past year (%)
+  [alcohol] Alcohol, former drinkers (%), age-standardized
+  [alcohol] Alcohol, unrecorded per capita (15+) consumption (in litres of pure alcohol), three-year average
+  [alcohol] Alcohol use disorders (15+), 12 month prevalence (%) with 95%
+  [alcohol] Alcohol, total per capita (15+) consumption (in litres of pure alcohol) (SDG Indicator 3.5.2), three-year average
+  [alcohol] Alcohol, 15-19 years heavy continuous drinkers, drinkers only, past year (%)
+  [alcohol] National surveys on adult alcohol consumption
+  [alcohol] Alcohol, tourist consumption (in litres of pure alcohol), three-year average
+  [alcohol] Alcohol, recorded per capita (15+) consumption (in litres of pure alcohol), by beverage type
+  [alcohol] Alcohol, average daily intake in grams among drinkers, three-year average
+  [alcohol] Percent of all DALYs attributable to alcohol
+  [alcohol] Report with data from health services on alcohol use and AUDs
+  [alcohol] Alcohol-attributable DALYs lost from all causes (all ages), (number)
+  [alcohol] Alcohol dependence (15+ ), 12-month prevalence (%) with 95%CI
+  [alcohol] Alcohol, recorded per capita (15+) consumption (in litres of pure alcohol), three-year average
+  [cancer] Cancer, age-standardized death rates (15+), per 100,000 population
+
+--- GHE_LifeExp (31 distinct indicators) ---
+  [premature] Premature deaths due to noncommunicable diseases (NCD) as a proportion of all NCD deaths
+  [probability of dying] Infant mortality rate (probability of dying between birth and age 1 per 1000 live births)
+  [probability of dying] Under-five mortality rate (probability of dying by age 5 per 1000 live births)
+  [probability of dying] Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)
+  [probability of dying] Mortality rate for 5-14 year-olds (probability of dying per 1000 children aged 5-14 years)
+  [cardiovascular] Probability (%) of dying between age 30 and exact age 70 from any of cardiovascular disease, cancer, diabetes, or chronic respiratory disease
+  [cancer] Probability (%) of dying between age 30 and exact age 70 from any of cardiovascular disease, cancer, diabetes, or chronic respiratory disease
+  [diabetes] Probability (%) of dying between age 30 and exact age 70 from any of cardiovascular disease, cancer, diabetes, or chronic respiratory disease
+
+--- Nutrition (37 distinct indicators) ---
+  [overweight] Prevalence of overweight among adults, BMI &GreaterEqual; 25 (crude estimate) (%)
+  [overweight] Prevalence of overweight among children and adolescents, BMI > +1 standard deviations above the median (crude estimate) (%)
+  [overweight] Overweight prevalence among children under 5 years of age (% weight-for-height >+2 SD), survey-based estimates
+  [overweight] Overweight numbers among children under 5 years of age (thousands), model-based estimates
+  [overweight] Prevalence of overweight among adults, BMI &GreaterEqual; 25 (age-standardized estimate) (%)
+  [obesity] Prevalence of obesity among children and adolescents, BMI > +2 standard deviations above the median (crude estimate) (%)
+  [obesity] Prevalence of obesity among adults, BMI &GreaterEqual; 30 (crude estimate) (%)
+  [obesity] Prevalence of obesity among adults, BMI &GreaterEqual; 30 (age-standardized estimate) (%)
+  [wasting] Wasting prevalence among children under 5 years of age (% weight-for-height <-2 SD), survey-based estimates
+  [stunting] Stunting prevalence among children under 5 years of age (% height-for-age <-2 SD), survey-based estimates
+  [stunting] Stunting numbers among children under 5 years of age (millions), model-based estimates
+  [stunting] Stunting prevalence among children under 5 years of age (% height-for-age <-2 SD), model-based estimates
+  [wasted] Wasted numbers among children under 5 years of age (millions), model-based estimates
+  [wasted] Severe wasted prevalence among children under 5 years of age   (% weight-for-height <-3 SD), survey-based estimates
+
+--- HealthFinancing (12 distinct indicators) ---
+  [out-of-pocket] Out-of-pocket expenditure as percentage of current health expenditure (CHE) (%)
+  [out-of-pocket] Out-of-pocket expenditure (OOP) per capita in US$
+  [oop] Out-of-pocket expenditure (OOP) per capita in US$
+
+--- WHS (160 distinct indicators) ---
+  [premature] Premature deaths due to noncommunicable diseases (NCD) as a proportion of all NCD deaths
+  [probability of dying] Infant mortality rate (probability of dying between birth and age 1 per 1000 live births)
+  [probability of dying] Under-five mortality rate (probability of dying by age 5 per 1000 live births)
+  [probability of dying] Mortality rate for 5-14 year-olds (probability of dying per 1000 children aged 5-14 years)
+  [overweight] Prevalence of overweight among adults, BMI &GreaterEqual; 25 (crude estimate) (%)
+  [overweight] Prevalence of overweight among children and adolescents, BMI > +1 standard deviations above the median (crude estimate) (%)
+  [overweight] Overweight prevalence among children under 5 years of age (% weight-for-height >+2 SD), survey-based estimates
+  [overweight] Overweight numbers among children under 5 years of age (thousands), model-based estimates
+  [overweight] Prevalence of overweight among adults, BMI &GreaterEqual; 25 (age-standardized estimate) (%)
+  [obesity] Prevalence of obesity among children and adolescents, BMI > +2 standard deviations above the median (crude estimate) (%)
+  [obesity] Prevalence of obesity among adults, BMI &GreaterEqual; 30 (crude estimate) (%)
+  [obesity] Prevalence of obesity among adults, BMI &GreaterEqual; 30 (age-standardized estimate) (%)
+  [cholesterol] Mean total cholesterol,  crude
+  [cholesterol] Mean Non-HDL cholesterol, age-standardized
+  [cholesterol] Mean total cholesterol,  age-standardized
+  [cholesterol] Mean HDL cholesterol, crude
+  [cholesterol] Mean Non-HDL cholesterol, crude
+  [cholesterol] Mean HDL cholesterol, age-standardized
+  [non-hdl] Mean Non-HDL cholesterol, crude
+  [non-hdl] Mean Non-HDL cholesterol, age-standardized
+  [alcohol] Alcohol, total per capita (15+) consumption (in litres of pure alcohol) (SDG Indicator 3.5.2), three-year average
+  [cardiovascular] Probability (%) of dying between age 30 and exact age 70 from any of cardiovascular disease, cancer, diabetes, or chronic respiratory disease
+  [cancer] Probability (%) of dying between age 30 and exact age 70 from any of cardiovascular disease, cancer, diabetes, or chronic respiratory disease
+  [cancer] Prevalence of cervical cancer screening  among women aged 30-49 years (%)
+  [air pollution] Joint effects of air pollution attributable deaths
+  [out-of-pocket] Out-of-pocket expenditure as percentage of current health expenditure (CHE) (%)
+  [out-of-pocket] Out-of-pocket expenditure (OOP) per capita in US$
+  [oop] Out-of-pocket expenditure (OOP) per capita in US$
+  [wasting] Wasting prevalence among children under 5 years of age (% weight-for-height <-2 SD), survey-based estimates
+  [stunting] Stunting prevalence among children under 5 years of age (% height-for-age <-2 SD), survey-based estimates
+  [stunting] Stunting numbers among children under 5 years of age (millions), model-based estimates
+  [stunting] Stunting prevalence among children under 5 years of age (% height-for-age <-2 SD), model-based estimates
+  [wasted] Wasted numbers among children under 5 years of age (millions), model-based estimates
+  [wasted] Severe wasted prevalence among children under 5 years of age   (% weight-for-height <-3 SD), survey-based estimates
+  [diabetes] Diabetes treatment coverage, age-standardized
+  [diabetes] Probability (%) of dying between age 30 and exact age 70 from any of cardiovascular disease, cancer, diabetes, or chronic respiratory disease
+  [diabetes] Prevalence of diabetes, crude
+  [diabetes] Prevalence of diabetes, age-standardized
+  [tobacco] Estimate of current tobacco smoking prevalence (%) (age-standardized rate)
+  [tobacco] Estimate of current tobacco use prevalence (%) (age-standardized rate)
+  [physical activity] Prevalence of insufficient physical activity among adults aged 18+ years (crude estimate) (%)
+  [physical activity] Prevalence of insufficient physical activity among adults aged 18+ years (age-standardized estimate) (%)

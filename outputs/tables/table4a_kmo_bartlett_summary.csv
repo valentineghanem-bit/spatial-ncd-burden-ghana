@@ -1,0 +1,2 @@
+kmo_overall,kmo_interpretation,bartlett_chi_square,bartlett_p_value,bartlett_verdict
+0.662,mediocre,1310.5,2.907386393071251e-270,REJECTS the null of an identity correlation matrix (p<0.001) -- factor extraction is justified

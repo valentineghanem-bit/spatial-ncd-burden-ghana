@@ -1,0 +1,14 @@
+variable,missing_pct_2000_2022,role,single_sourced_unreplicated_in_whs
+ncd_premature_death_proportion_pct,0.043,trend_and_ml_eligible,False
+ncd_3070_probability_pct,0.043,trend_and_ml_eligible,False
+overweight_adult_pct_agestd,0.0,trend_and_ml_eligible,False
+obesity_adult_pct_agestd,0.0,trend_and_ml_eligible,False
+diabetes_prevalence_pct_agestd,0.0,trend_and_ml_eligible,False
+non_hdl_cholesterol_mean_agestd,0.174,trend_and_ml_eligible,False
+tobacco_use_pct_agestd,0.652,sparse_flag_for_stage4_review,False
+insufficient_physical_activity_pct_agestd,0.0,trend_and_ml_eligible,False
+alcohol_percapita_litres,0.0,trend_and_ml_eligible,False
+air_pollution_death_rate_agestd,0.565,trend_and_ml_eligible,True
+uhc_service_coverage_index,0.696,descriptive_only_excluded_from_trend_and_ml,False
+oop_pct_che,0.0,trend_and_ml_eligible,False
+oop_per_capita_usd,0.0,trend_and_ml_eligible,False

@@ -1,0 +1,3 @@
+test,statistic,p_value,ci_low,ci_high,excludes_zero
+Steiger_Z,2.0734,0.0381,,,
+Bootstrap_R2_diff,0.0116,,-0.0008,0.0329,False

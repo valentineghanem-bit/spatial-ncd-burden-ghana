@@ -1,0 +1,85 @@
+For each target indicator: which file(s) contain it, year range, n rows, dimension breakdown
+
+====================================================================================================
+INDICATOR: Premature deaths due to noncommunicable diseases (NCD) as a proportion of all NCD deaths
+  [NCD] n=66 years=2000-2021 dims=['Female', 'Male', 'Both sexes']
+  [GHE_LifeExp] n=66 years=2000-2021 dims=['Female', 'Male', 'Both sexes']
+  [WHS] n=66 years=2000-2021 dims=['Female', 'Male', 'Both sexes']
+
+====================================================================================================
+INDICATOR: Probability (%) of dying between age 30 and exact age 70 from any of cardiovascular disease, cancer, diabetes, or chronic respiratory disease
+  [NCD] n=66 years=2000-2021 dims=['Both sexes', 'Male', 'Female']
+  [GlobalStrategy] n=66 years=2000-2021 dims=['Both sexes', 'Male', 'Female']
+  [GHE_LifeExp] n=66 years=2000-2021 dims=['Both sexes', 'Male', 'Female']
+  [WHS] n=66 years=2000-2021 dims=['Both sexes', 'Male', 'Female']
+
+====================================================================================================
+INDICATOR: Prevalence of overweight among adults, BMI &GreaterEqual; 25 (age-standardized estimate) (%)
+  [NCD] n=99 years=1990-2022 dims=['Female', 'Male', 'Both sexes']
+  [Nutrition] n=99 years=1990-2022 dims=['Female', 'Male', 'Both sexes']
+  [WHS] n=99 years=1990-2022 dims=['Female', 'Male', 'Both sexes']
+
+====================================================================================================
+INDICATOR: Prevalence of obesity among adults, BMI &GreaterEqual; 30 (age-standardized estimate) (%)
+  [NCD] n=99 years=1990-2022 dims=['Both sexes', 'Male', 'Female']
+  [Nutrition] n=99 years=1990-2022 dims=['Both sexes', 'Male', 'Female']
+  [WHS] n=99 years=1990-2022 dims=['Both sexes', 'Male', 'Female']
+
+====================================================================================================
+INDICATOR: Mean Non-HDL cholesterol, age-standardized
+  [NCD] n=117 years=1980-2018 dims=['Both sexes', 'Female', 'Male']
+  [WHS] n=117 years=1980-2018 dims=['Both sexes', 'Female', 'Male']
+
+====================================================================================================
+INDICATOR: Alcohol, total per capita (15+) consumption (in litres of pure alcohol) (SDG Indicator 3.5.2), three-year average
+  [NCD] n=23 years=2000-2022 dims=['Both sexes']
+  [Alcohol] n=23 years=2000-2022 dims=['Both sexes']
+  [WHS] n=23 years=2000-2022 dims=['Both sexes']
+
+====================================================================================================
+INDICATOR: Ambient and household air pollution attributable death rate (per 100 000 population, age-standardized)
+  [GlobalStrategy] n=180 years=2010-2019 dims=['Male', 'Both sexes', 'Female']
+
+====================================================================================================
+INDICATOR: UHC Service Coverage Index (SDG 3.8.1)
+  [GlobalStrategy] n=7 years=2000-2021 dims=[]
+
+====================================================================================================
+INDICATOR: Out-of-pocket expenditure as percentage of current health expenditure (CHE) (%)
+  [HealthFinancing] n=23 years=2000-2022 dims=[]
+  [WHS] n=23 years=2000-2022 dims=[]
+
+====================================================================================================
+INDICATOR: Out-of-pocket expenditure (OOP) per capita in US$
+  [HealthFinancing] n=23 years=2000-2022 dims=[]
+  [WHS] n=23 years=2000-2022 dims=[]
+
+====================================================================================================
+INDICATOR: Wasting prevalence among children under 5 years of age (% weight-for-height <-2 SD), survey-based estimates
+  [GlobalStrategy] n=934 years=1988-2022 dims=['Decile 1 (poorest)', 'Female', 'Wealth - Top 40%', 'Decile 9', 'Q3', 'Male', 'Total (All ages)', 'Rural']
+  [Nutrition] n=934 years=1988-2022 dims=['Decile 1 (poorest)', 'Female', 'Wealth - Top 40%', 'Decile 9', 'Q3', 'Male', 'Total (All ages)', 'Rural']
+  [WHS] n=934 years=1988-2022 dims=['Decile 1 (poorest)', 'Female', 'Wealth - Top 40%', 'Decile 9', 'Q3', 'Male', 'Total (All ages)', 'Rural']
+
+====================================================================================================
+INDICATOR: Stunting prevalence among children under 5 years of age (% height-for-age <-2 SD), survey-based estimates
+  [Nutrition] n=995 years=1988-2022 dims=['36 to 41 months', 'Female', 'Wealth - Bottom 40%', 'Male', '42 to 47 months', '6 to 59 months', '6 to 11 months', 'Q4']
+  [WHS] n=995 years=1988-2022 dims=['36 to 41 months', 'Female', 'Wealth - Bottom 40%', 'Male', '42 to 47 months', '6 to 59 months', '6 to 11 months', 'Q4']
+
+====================================================================================================
+INDICATOR: Estimate of current tobacco use prevalence (%) (age-standardized rate)
+  [NCD] n=30 years=2000-2030 dims=['Female', 'Male', 'Both sexes']
+  [WHS] n=30 years=2000-2030 dims=['Female', 'Male', 'Both sexes']
+
+====================================================================================================
+INDICATOR: Prevalence of insufficient physical activity among adults aged 18+ years (age-standardized estimate) (%)
+  [NCD] n=69 years=2000-2022 dims=['Female', 'Both sexes', 'Male']
+  [WHS] n=69 years=2000-2022 dims=['Female', 'Both sexes', 'Male']
+
+====================================================================================================
+INDICATOR: Prevalence of diabetes, age-standardized
+  [NCD] n=198 years=1990-2022 dims=['Female', 'Male', 'Both sexes']
+  [WHS] n=198 years=1990-2022 dims=['Female', 'Male', 'Both sexes']
+
+====================================================================================================
+INDICATOR: Cancer, age-standardized death rates (15+), per 100,000 population
+  [Alcohol] n=6 years=2019-2019 dims=['Female', 'Both sexes', 'Male']

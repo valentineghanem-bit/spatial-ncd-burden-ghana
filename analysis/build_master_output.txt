@@ -1,0 +1,57 @@
+National panel (2000-2022): (23, 14)
+uhc_service_coverage_index                   0.70
+tobacco_use_pct_agestd                       0.65
+air_pollution_death_rate_agestd              0.57
+non_hdl_cholesterol_mean_agestd              0.17
+ncd_premature_death_proportion_pct           0.04
+ncd_3070_probability_pct                     0.04
+diabetes_prevalence_pct_agestd               0.00
+obesity_adult_pct_agestd                     0.00
+overweight_adult_pct_agestd                  0.00
+year                                         0.00
+alcohol_percapita_litres                     0.00
+insufficient_physical_activity_pct_agestd    0.00
+oop_pct_che                                  0.00
+oop_per_capita_usd                           0.00
+dtype: float64
+
+Cancer age-standardized death rate, 2019 (single cross-section, NOT in panel): 117.4287315515
+
+Variable tier metadata:
+                                  variable  missing_pct_2000_2022                                        role  single_sourced_unreplicated_in_whs
+       ncd_premature_death_proportion_pct                  0.043                       trend_and_ml_eligible                               False
+                 ncd_3070_probability_pct                  0.043                       trend_and_ml_eligible                               False
+              overweight_adult_pct_agestd                  0.000                       trend_and_ml_eligible                               False
+                 obesity_adult_pct_agestd                  0.000                       trend_and_ml_eligible                               False
+           diabetes_prevalence_pct_agestd                  0.000                       trend_and_ml_eligible                               False
+          non_hdl_cholesterol_mean_agestd                  0.174                       trend_and_ml_eligible                               False
+                   tobacco_use_pct_agestd                  0.652               sparse_flag_for_stage4_review                               False
+insufficient_physical_activity_pct_agestd                  0.000                       trend_and_ml_eligible                               False
+                 alcohol_percapita_litres                  0.000                       trend_and_ml_eligible                               False
+          air_pollution_death_rate_agestd                  0.565                       trend_and_ml_eligible                                True
+               uhc_service_coverage_index                  0.696 descriptive_only_excluded_from_trend_and_ml                               False
+                              oop_pct_che                  0.000                       trend_and_ml_eligible                               False
+                       oop_per_capita_usd                  0.000                       trend_and_ml_eligible                               False
+
+RF/XGBoost+SHAP target locked: ncd_3070_probability_pct_yoy_change
+Features (reduced, post Stage-1-council correction): ['overweight_adult_pct_agestd', 'obesity_adult_pct_agestd', 'non_hdl_cholesterol_mean_agestd', 'alcohol_percapita_litres', 'insufficient_physical_activity_pct_agestd', 'oop_pct_che']
+Complete-case n (all features + target simultaneously non-missing): 18 (verified -- original 8-feature spec gave complete-case n=2, rejected)
+Small-N mandate: leave-one-out CV only, no held-out test split; report per-fold R2/MAE variance explicitly at Stage 4; SHAP interpreted descriptively, not confirmatorily; a permutation-null baseline (shuffle target, refit, compare SHAP magnitude distributions) is mandatory before any SHAP ranking is presented as a substantive finding.
+
+Nutrition double-burden panel (1988-2022, 'Total' stratum): (35, 3)
+    year  wasting_pct_under5_total  stunting_pct_under5_total
+0   1988                       9.1                       33.7
+5   1993                      12.3                       32.8
+9   1997                       8.2                       34.7
+10  1998                       9.9                       30.6
+15  2003                       8.4                       35.5
+18  2006                       6.0                       27.9
+20  2008                       8.7                       28.4
+23  2011                       6.2                       22.8
+26  2014                       4.7                       18.8
+29  2017                       6.8                       17.5
+34  2022                       5.8                       17.4
+
+District structural NCD-risk vulnerability master: (261, 26)
+Missing check: {'poverty_incidence': 0, 'poverty_intensity': 0, 'literacy_rate': 0, 'uninsured_rate': 0, 'elderly_share_65plus_pct': 0, 'latitude': 0, 'longitude': 0}
+N districts: 261 (expect 261 per standing ghana-261-districts rule)

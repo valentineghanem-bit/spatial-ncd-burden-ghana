@@ -1,0 +1,2 @@
+original_loocv_r2,n_bootstrap_valid,n_bootstrap_skipped_degenerate,bootstrap_mean_r2,bootstrap_sd_r2,bootstrap_median_r2,ci_95_low,ci_95_high,pct_resamples_r2_negative
+0.2311,200,0,0.615,0.1937,0.6271,0.2128,0.9346,0.0

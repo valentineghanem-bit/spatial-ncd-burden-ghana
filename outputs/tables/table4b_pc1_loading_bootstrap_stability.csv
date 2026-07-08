@@ -1,0 +1,7 @@
+component,original_loading,bootstrap_mean,bootstrap_sd,ci_95_low,ci_95_high
+poverty_incidence,0.505,0.504,0.016,0.471,0.534
+poverty_intensity,0.394,0.388,0.045,0.294,0.47
+illiteracy_rate,0.484,0.483,0.025,0.431,0.528
+uninsured_rate,0.043,0.046,0.064,-0.072,0.179
+unemployment_rate,0.378,0.372,0.053,0.262,0.463
+dependency_ratio,0.459,0.459,0.037,0.383,0.524

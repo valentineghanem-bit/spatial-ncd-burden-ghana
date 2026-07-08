@@ -1,0 +1,9 @@
+variable,n,n_years_or_districts_total,missing_pct,mean,sd,min,max
+poverty_incidence,261,261,0.0,27.587,13.449,6.3,68.6
+poverty_intensity,261,261,0.0,43.442,1.738,40.5,51.2
+literacy_rate,261,261,0.0,0.71,0.147,0.392,0.946
+uninsured_rate,261,261,0.0,0.309,0.135,0.052,0.732
+unemployment_rate,261,261,0.0,0.507,0.082,0.36,0.845
+elderly_share_65plus_pct,261,261,0.0,4.629,1.574,1.425,10.408
+dependency_ratio,261,261,0.0,0.694,0.139,0.296,1.116
+total_population,261,261,0.0,118051.517,67972.229,28179.0,443945.0
