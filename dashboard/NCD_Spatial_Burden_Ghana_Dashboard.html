@@ -126,9 +126,9 @@ input[type=range]{width:155px;accent-color:var(--primary);cursor:pointer}
  <div class="card span6 mapcard"><h3 id="mapTitle"></h3><p class="cap" id="mapCap">Districts coloured by value · scroll/drag to zoom &amp; pan · click to filter.</p><div class="zoomctl"><button type="button" id="zPlusP" title="Zoom in">+</button><button type="button" id="zMinusP" title="Zoom out">−</button><button type="button" id="zResetP" title="Reset" style="font-size:12px">⟲</button></div><div class="chart map" id="mapP"></div><div class="maplegend" id="legP"></div></div>
  <div class="card span6 mapcard"><h3>Spatial cluster typology (LISA)</h3><p class="cap">Local Moran's I clusters · scroll/drag to zoom &amp; pan · click to filter.</p><div class="zoomctl"><button type="button" id="zPlusL" title="Zoom in">+</button><button type="button" id="zMinusL" title="Zoom out">−</button><button type="button" id="zResetL" title="Reset" style="font-size:12px">⟲</button></div><div class="chart map" id="mapLisa"></div><div class="maplegend" id="legLisa"></div></div>
  <div class="card span5"><h3 id="rankTitle"></h3><p class="cap" id="rankCap">Colour = LISA cluster · dashed line = threshold · click a bar to filter.</p><div class="chart" id="rank"></div></div>
- <div class="card span4"><h3 id="scTitle"></h3><p class="cap">Regression + gold ★ what-if prediction.</p><div class="chart" id="scatter"></div></div>
+ <div class="card span4"><h3 id="scTitle"></h3><p class="cap">Regression + gold ★ what-if prediction. The outcome axis (vulnerability index) is a standardized PCA score with a national mean of 0 by construction — a near-0 regression intercept reflects this, not a data error. The covariate axis (elderly population share) is a genuine percentage with its own non-zero national average.</p><div class="chart" id="scatter"></div></div>
  <div class="card span3"><h3>Cluster tier counts</h3><p class="cap" id="tiersCap">Regions per LISA class.</p><div class="chart" id="tiers"></div></div>
- <div class="card span4"><h3 id="lolTitle"></h3><p class="cap" id="lolCap">Sorted; dashed line = national mean.</p><div class="chart" id="lollipop"></div></div>
+ <div class="card span4"><h3 id="lolTitle"></h3><p class="cap" id="lolCap">Sorted; dashed line = national mean (0, by construction — this is a standardized PCA index, not a raw percentage).</p><div class="chart" id="lollipop"></div></div>
  <div class="card span4"><h3 id="heatTitle">Indicator heatmap</h3><p class="cap" id="heatCap">Min–max scaled per indicator.</p><div class="chart" id="heatmap"></div></div>
  <div class="card span4"><h3>Burden treemap</h3><p class="cap" id="treeCap">Area = outcome · colour = LISA · click to filter.</p><div class="chart" id="treemap"></div></div>
  <div class="card span7"><h3 id="boxTitle"></h3><p class="cap" id="boxCap">Distribution of the outcome across regions, grouped by spatial-cluster class.</p><div class="chart" id="box"></div></div>
@@ -344,7 +344,7 @@ function titles(){document.getElementById('mapTitle').textContent=metricOf(S.met
  document.getElementById('rankCap').textContent='Colour = LISA cluster · dashed line = threshold · click a bar to filter.'+capNote;
  document.getElementById('scTitle').textContent=PRIM.label+' vs '+COV.label;
  document.getElementById('lolTitle').textContent=(C.hasX?COV.label:PRIM.label)+' by '+UNIT;
- document.getElementById('lolCap').textContent='Sorted; dashed line = national mean.'+capNote;
+ document.getElementById('lolCap').textContent='Sorted; dashed line = national mean (0, by construction — this is a standardized PCA index, not a raw percentage).'+capNote;
  document.getElementById('treeCap').textContent='Area = |value| (sign shown by colour) · colour = LISA · click to filter.'+treeNote;
  document.getElementById('boxTitle').textContent=PRIM.label+' distribution by cluster class';
  if(!C.hasX){
