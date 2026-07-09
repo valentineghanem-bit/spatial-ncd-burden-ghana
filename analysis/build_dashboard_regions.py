@@ -1,18 +1,28 @@
 """
-Build the 259-polygon regions JSON consumed by the HI-EI dashboard/poster generator
+Build the 261-row regions JSON consumed by the HI-EI dashboard/poster generator
 (_system/bespoke/bespoke_gen.js). Uses the vetted 261-to-GeoJSON crosswalk
 (docs/district_crosswalk_261_to_260.csv) rather than naive name matching, which only
 resolved 174/261 districts and left the majority of the choropleth blank.
 
-Two corrections applied on top of the crosswalk, both verified directly against the
+Every one of the 261 master-sheet districts is kept as its own distinct entry (matching
+the true census frame -- see [[ghana-261-districts]]), never merged or averaged down to
+the GeoJSON's own smaller feature count. Two corrections applied on top of the crosswalk
+for the `name` (polygon) each district points to, both verified directly against the
 GeoJSON's actual feature list (259 features):
   - Sagnarigu Municipal: crosswalk marks this a structural_gap absorbed into Tamale
     Metropolitan, but the GeoJSON has its own distinct "SAGNERIGU" polygon (a spelling
     variant). Mapped directly rather than merged.
   - Ayawaso Central Municipal: crosswalk claims an exact match that does not exist in
-    this GeoJSON (only West/North/East do). Merged into the adjacent AYAWASO EAST
-    MUNICIPAL polygon, population-weighted, for map display only -- the master CSV and
-    manuscript keep it as its own distinct row.
+    this GeoJSON (only West/North/East do). Points at the adjacent AYAWASO EAST
+    MUNICIPAL polygon -- disclosed as a rendering fallback (this GeoJSON is missing that
+    one polygon), never a change to the underlying district's own data.
+
+Because the GeoJSON has only 259 features for 261 real districts (Awutu Senya
+West/Guan/Ayawaso Central all point at a sibling's polygon, per the notes above), exactly
+2 polygons end up carrying two districts' worth of choropleth colour on the map -- an
+honest, disclosed characteristic of the boundary file, not something papered over by
+averaging the two districts' values into one. The regions array itself always has 261
+entries, matching the master CSV row count exactly.
 
 Output: writes to the path passed as argv[1], or prints to stdout if omitted.
 """
@@ -23,6 +33,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
+# Districts whose crosswalk-listed GeoJSON name is wrong or missing; each is pointed at
+# the nearest sibling polygon for MAP RENDERING ONLY. The district's own row, and its own
+# value, are never dropped or merged with that sibling's.
 GAP_PARENT_POLYGON = {
     "Awutu Senya West": "AWUTU SENYA",
     "Guan": "KRACHI EAST MUNICIPAL",
@@ -59,20 +72,17 @@ def build(geojson_path: str):
         raise SystemExit(f"Unmapped districts remain: {list(missing.district)}")
 
     out = []
-    for name, g in master.groupby("geojson_name"):
-        if len(g) == 1:
-            r = g.iloc[0]
-            v, x = float(r.vulnerability_index_pc1), r.elderly_share_65plus_pct
-            lisa = lisa_by_district.get(r.district, "NS")
-        else:
-            w = g.total_population.values
-            v = float((g.vulnerability_index_pc1.values * w).sum() / w.sum())
-            x = float((g.elderly_share_65plus_pct.values * w).sum() / w.sum())
-            lisa = next((lisa_by_district[d] for d in g.district if d in lisa_by_district), "NS")
+    for r in master.itertuples():
         out.append({
-            "name": name, "short": name.title(), "v": round(v, 4), "lisa": lisa,
-            "x": None if pd.isna(x) else round(float(x), 3),
+            "name": r.geojson_name,
+            "short": r.district,
+            "v": round(float(r.vulnerability_index_pc1), 4),
+            "lisa": lisa_by_district.get(r.district, "NS"),
+            "x": None if pd.isna(r.elderly_share_65plus_pct) else round(float(r.elderly_share_65plus_pct), 3),
         })
+
+    if len(out) != 261:
+        raise SystemExit(f"Expected 261 districts, got {len(out)}")
 
     geo = json.load(open(geojson_path, encoding="utf-8"))
     geo_names = {f["properties"]["name"] for f in geo["features"]}
